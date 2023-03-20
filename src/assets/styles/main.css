@@ -137,6 +137,29 @@ body header .navbar .menu-section .menu-options .menu-icon {
   margin: 2px;
   padding-bottom: 5px;
 }
+body .widget-container {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+body .widget-container .widget {
+  background-color: var(--main-blue);
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
+}
+body .widget-container .widget img {
+  height: 30px;
+  width: 30px;
+}
 body main {
   font-family: "Poppins", sans-serif;
 }

@@ -5,6 +5,9 @@ import data from '../data/ddugky_project.json'
 import Header from './Header';
 import LeftBoard from './boards/LeftBoard';
 import RightBoard from './boards/RightBoard';
+import quesmark from '../assets/icons/misc/question-mark.png';
+import schedule from '../assets/icons/misc/schedule.png';
+import meeting from '../assets/icons/misc/meeting.png';
 
 const Home = () => {
     const arr = [];
@@ -14,10 +17,17 @@ const Home = () => {
         setBoardToggle((prev) => prev = !prev);
     }
 
+    const widgets=[quesmark,schedule,meeting];
+
     return (
         <>
             <div>
                 <Header />
+                <div className="widget-container">
+                    {widgets.map(widget=><div className="widget">
+                        <img src={widget} alt={widget}/>
+                    </div>)}
+                </div>
                 <main>
                     <div className="container-auto">
                         <LeftBoard arr={arr} boardToggle={boardToggle} handleLeftBoard={handleLeftBoard} />

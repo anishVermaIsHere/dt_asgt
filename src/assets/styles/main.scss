@@ -34,7 +34,6 @@ body {
     // header section
     header {
         position: relative;
-
         .navbar {
             height: 90px;
             background: #F0F0F0;
@@ -144,6 +143,33 @@ body {
                     // display:none;
                 }
 
+            }
+        }
+    }
+
+    // widget section
+
+    .widget-container {
+        position:fixed;
+        right:50px;
+        bottom:50px;
+        z-index:200;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap:20px;
+
+        .widget {
+            background-color: var(--main-blue);
+            border-radius: 50%;
+            height: 50px;
+            width:50px;
+            display:grid;
+            place-items: center;
+            img {
+                height:30px;
+                width:30px;
             }
         }
     }
