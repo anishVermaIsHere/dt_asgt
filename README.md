@@ -1,4 +1,5 @@
 # dt_asgt
+# React App
 
 This App is replication of Figma design which is designed and developd in React JS. The figma design is shown below:
 
